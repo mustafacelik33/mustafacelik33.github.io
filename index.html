@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Çelik | Portfolyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Yumuşak kaydırma efekti */
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">MÇ.</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#hakkimda" class="hover:text-blue-600">Hakkımda</a>
+                <a href="#deneyim" class="hover:text-blue-600">Deneyim</a>
+                <a href="#projeler" class="hover:text-blue-600">Projeler</a>
+                <a href="#iletisim" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="h-screen flex items-center justify-center bg-white text-center px-4 pt-16">
+        <div>
+            <div class="w-40 h-40 mx-auto rounded-full bg-gray-200 mb-6 overflow-hidden border-4 border-blue-600">
+                <img src="https://via.placeholder.com/150" alt="Mustafa Çelik" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Merhaba, Ben <span class="gradient-text">Mustafa Çelik</span></h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Elektrik-Elektronik Mühendisi Adayı. Gömülü sistemler, otomasyon ve 3D tasarım tutkunu.
+                Sabırlı, adım adım ilerleyen ve çözüm odaklı bir mühendis.
+            </p>
+            <a href="#projeler" class="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition">Projelerimi Gör</a>
+        </div>
+    </section>
+
+    <section id="hakkimda" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Hakkımda</h2>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-lg leading-relaxed mb-4">
+                    Dokuz Eylül Üniversitesi Elektrik-Elektronik Mühendisliği son sınıf öğrencisiyim (Şubat 2026 Mezuniyet). 
+                    Mersin/Mut doğumluyum. Mühendislik eğitimim boyunca teorik bilginin yanı sıra saha uygulamalarına önem verdim.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Yatılı okul disipliniyle büyüdüm, bu bana zorluklar karşısında sabırlı olmayı ve kendi ayaklarım üzerinde durmayı öğretti.
+                    Kodlamada (C/C++) mükemmel olduğumu iddia etmem ancak bir sistemin nasıl çalışması gerektiğini analiz etme, 
+                    algoritma kurma ve <strong>Autodesk Fusion 360</strong> ile mekanik tasarımlar yapma konusunda yetkinim.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="deneyim" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Eğitim ve Deneyim</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Eğitim</h3>
+                    <div class="border-l-4 border-blue-600 pl-4 mb-6">
+                        <h4 class="font-bold">Dokuz Eylül Üniversitesi</h4>
+                        <p class="text-gray-600">Elektrik-Elektronik Mühendisliği</p>
+                        <p class="text-sm text-gray-500">2020 - 2026 (Beklenen)</p>
+                        <p class="mt-2 text-sm">Ortalama: 2.35 (Aktif Proje Odaklı Öğrenim)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Staj Deneyimi</h3>
+                    <div class="border-l-4 border-green-500 pl-4 mb-6">
+                        <h4 class="font-bold">BRF Banvit</h4>
+                        <p class="text-gray-600">Bakım Planlama Stajyeri</p>
+                        <p class="text-sm text-gray-500">1 Ay</p>
+                    </div>
+                    <div class="border-l-4 border-green-500 pl-4 mb-6">
+                        <h4 class="font-bold">Sekonder Elektrik</h4>
+                        <p class="text-gray-600">Elektrik Stajyeri</p>
+                        <p class="text-sm text-gray-500">1 Ay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeler" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Projeler</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">TÜBİTAK 2209B Otomasyon Makinesi</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Bitirme projesi kapsamında; karton, pirinç kabuğu ve kahve telvesini karıştırarak ürün elde eden tam otomasyonlu bir makine tasarımı.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Arduino Mega</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Fusion 360</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Step Motorlar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Python Kontrol Arayüzü (GUI)</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            TÜBİTAK projesi için geliştirdiğim, makinenin tüm verilerini anlık izleyebildiğim modern bir "Command Center" masaüstü uygulaması.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Python</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">CustomTkinter</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Serial Com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">BÜRKÜT Roket Takımı</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            TEKNOFEST yarışması kapsamında aviyonik sistem sorumluluğu. Sensör verilerinin okunması ve yer istasyonu haberleşmesi.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Aviyonik</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Sensör Sistemleri</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Takım Çalışması</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-20 bg-gray-900 text-white text-center">
+        <h2 class="text-3xl font-bold mb-8">İletişime Geçin</h2>
+        <p class="mb-8 text-gray-400">Projelerim hakkında konuşmak veya iş birliği yapmak için bana ulaşabilirsiniz.</p>
+        <div class="flex justify-center space-x-8 text-3xl">
+            <a href="mailto:mail_adresin@gmail.com" class="hover:text-blue-400"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/kullaniciadin" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kullaniciadin" target="_blank" class="hover:text-gray-400"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="mt-8 text-sm text-gray-500">© 2025 Mustafa Çelik</p>
+    </section>
+
+</body>
+</html>
